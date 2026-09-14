@@ -5,7 +5,13 @@
 		<meta name="viewport" 
 		content="width=device-width,initial-scale=1.0>
 		<title> Ask Syth Nova</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+		
+		<link rel="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/card.css">
+		<link rel="stylesheet" href="css/choice-list.css">
+		<link rel="stylesheet" href="css/style.css">
+		
 	</head>
 	
 	<body>
@@ -13,21 +19,34 @@
 			header
 		=============== -->
 		<header class="main-header">
-			<h1>Ask Syth Nova </h1>
+		<div class="header-left">
+		<p class="system-label">
+		ACCESS UNITY NEXUS INTELLIGENCE NETWORK</p>
+			<h1>ASK SYNTH NOVA </h1>
 			<p class="page-subtitle">
-			ACCESS UNITY NEXUS INTELLIGENCE NETWORK</p>
+			QUERY the CHRONICLES. Access Classified records.<br> Receive direct intelligence from Synth Nova. </p>
+			</div>
+			<div class="header-status">
+			<span class="status-dot"> </span>
+			<div>
+			<p class="status-title"> NETWORK STATUS </p>
+			<p class="status-value">CONNECTED</p>
+			</div>
+			</div>
+			</header>
+			
 		</header>
 		<!-- =================
 			MAIN 
 		============ -->
-		<main class="ask-synth-layout">
+		<main class="ask-nova-layout">
 			<!-- ===============
 				Left Panel
 				Synth Nova
 			========== -->
 			
 			<aside class="synth-panel">
-				<section class "nova-image-card">
+				<section class "card nova-image-card">
 					<img
 					src="images/synth-nova.png"
 					alt="Synth Nova"
@@ -51,9 +70,9 @@
 			ASK SYNTH NOVA
 		======= -->
 		
-		<section class="question-panel">
+		<section class="synth-panel">
 			<!-- Quick Questions -->
-			<section class="quick-questions nova-card">
+			<section class="card quick-questions">
 				
 				<div class="card-topline">
 					<span> QUICK ACCESS</span>
@@ -82,7 +101,7 @@
 					type="button"
 					class="quick-button"
 					data-topic="Elite-Society">
-						ELIT SOCIETY
+						ELITE SOCIETY
 					</button>
 					
 					<button
@@ -97,7 +116,7 @@
 			
 			<!-- Ask Question -->
 			
-			<section class= "ask-section nova-card">
+			<section class= "card ask-section">
 				<div class="card-topline">
 					<span>TRANSMISSION INPUT</span>
 					<span class="card-status">SECURE</span>
@@ -122,7 +141,7 @@
 				
 				<!-- RESPONSE AREA -->
 				<section 
-				class="Response-section nova-card">
+				class="card response-card">
 					<div class="card-topline">
 						<span>SYNTH NOVA// RESPONSE</span>
 					</div>
@@ -145,7 +164,7 @@
 				<!-- ========
 				Archive menu==== -->
 				<section
-				class="archive-card nova-card">
+				class="card archive-card ">
 					<div class="card-topline">
 						<span>NOVA ARCHIVE</span>
 						<span class="card-status"> ACTIVE</span>
@@ -181,7 +200,7 @@
 					
 					<!-- Featured Information -->
 					<section
-					class="featured-history nova-card">
+					class="card featured-history">
 						<div class="card-topline">
 							<span> FEATURED HISTORY</span>
 						</div>
