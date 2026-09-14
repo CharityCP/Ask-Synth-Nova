@@ -243,13 +243,28 @@
 =================*/
 
 .featured-history {
-width: 100%}
-
+	display:block;
+	width:100%;
+	min-height: 120px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	resize:vertical;
+}
 .history-image img {
 	display: block;
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
+}
+.archive-card {
+	display:block;
+	width:100%;
+	min-height: 120px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	resize:vertical;
 }
 
 .main-header, .main-header * {
@@ -311,13 +326,100 @@ width: 100%}
 	gap: 20px;
 	min-width:0;
 }
-
-/*=====================
-	RESPONSIVE layout
-==================*/
-
-@media (max-width: 650%) {
-	.ask-synth-nova {
-		grid-template-columns: 1fr;
+.featured-history {
+	
+	
+.history-image img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+		background-color: #3EA87F;
+} }
+	/*===============
+		UNITY NEXUS EMBLEM
+	================*/ 
+	.main-footer{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	gap: 20px;
+	
+	width: 100%;
+	box-sizing: border-box;
+	
+	margin-top: 25px;
+	padding: 20px 35px;
+	background: linear-gradient(
+	135deg,
+	#081b24,
+	#0d343b,
+	#10262d
+	);
+	
+	border-top: 2px solid #23d8cb;
+	color:white;
+	font-family: "Rajdhani", sans-serif;
 	}
-}
+	.main-footer p {
+	margin: 0;
+	letter-spacing: 1px;
+	}
+	
+	
+	
+	.footer-emblem {
+		width: 48px;
+		height: 48px;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		border: 2px solid #23d8cb;
+		border-radius: 50%;
+		
+		position: relative;
+		box-shadow: 
+		0 0 8px #23d8cb,
+		0 0 18px rgba(35,216,203,0.5);
+	}
+	
+	/* Inner Nexus ring */
+	footer-emblem: before {
+		content: "";
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		
+		border: 1px solid #61fff1;
+		border-radius: 50%;
+	}
+	
+	/* Central Intelligence Node */
+	
+	.emblem-core {
+		width: 8px;
+		height: 8px;
+		
+		background-color: #61fff1;
+		border-radius: 50%;
+		
+		box-shadow:0 0 6px #61fff1,
+		0 0 12px #23d8cb;
+	}
+	
+	.main-footer {
+	background-color: red !important;
+	min-height: 100px !important;
+	}
+	/*=====================
+		RESPONSIVE layout
+	==================*/
+	
+	@media (max-width: 650px) {
+		.ask-nova-layout {
+			grid-template-columns: 1fr;
+		}
+	}
