@@ -1,6 +1,6 @@
 
 ## Data
-<img src="images/askSynthWireframe-nova.png"
+<img src="images/askSynthWireframe.jpg"
 					alt="Synth Nova">
 <h1>Dataset: Synth Nova Chronicles Characeters</h1>
 
