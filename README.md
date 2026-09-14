@@ -1,6 +1,7 @@
 
 ## Data
-
+<img src="images/synth-nova.png"
+					alt="Synth Nova">
 <h1>Dataset: Synth Nova Chronicles Characeters</h1>
 
 <h2>Example Data:</h2>
