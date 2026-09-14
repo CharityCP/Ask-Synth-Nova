@@ -1,8 +1,8 @@
 
 /*==================
 	MAIN 3 COLUMN LAYOUT 
-	===================*/
-	
+===================*/
+
 .ask-nova-layout { 
 	display:grid;
 	grid-template-columns:
@@ -18,8 +18,8 @@
 }
 /*=============
 	TOP HERO / COMMAND HEADER 
-	=================*/
-	.main-header {
+=================*/
+.main-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -37,30 +37,30 @@
 	border-bottom: 2px solid #23d8cb;
 	box-shadow: 0 0 20px rgba(35,216,203,0.35);
 	color:white;
-	}
-	
-	/*Left side*/
-	
-	.header-left {
+}
+
+/*Left side*/
+
+.header-left {
 	max-width: 750px;
-	}
-	
-	.system-label {
+}
+
+.system-label {
 	margin: 0 0 8px;
 	font-size: 0.75rem;
 	letter-spacing: 3px;
 	color: #61fff1;
-	}
-	
-	.main-header h1 {
+}
+
+.main-header h1 {
 	margin: 0;
 	font-size: clamp(2rem, 4vw, 4rem);
 	letter-spacing: 3px;
 	font-family: "Orbitron", san-serif;
 	text-transform: uppercase;
-	}
-	
-	.page-subtitle{
+}
+
+.page-subtitle{
 	margin-top: 10px;
 	margin-bottom: 0;
 	
@@ -69,10 +69,10 @@
 	font-size: 1.05rem;
 	letter-spacing: 1px;
 	color: #c6e8e6;
-	}
-	 
-	/* RIGHT STATUS BOX */
-	.header-status {
+}
+
+/* RIGHT STATUS BOX */
+.header-status {
 	display:flex;
 	align-items: center;
 	gap: 12px;
@@ -80,36 +80,36 @@
 	border: 1px solid #23d8cb;
 	border-radius: 8px;
 	background-color: rgba (0,0,0,0.25);
-	}
-	
-	.status-dot {
+}
+
+.status-dot {
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
 	box-shadow:
 	0 0 8px #55ff9a,
 	0 0 16px #55ff9a;
-	}
-	
-	.status-title {
+}
+
+.status-title {
 	margin: 0;
 	font-size: 0.65rem;
 	letter-spacing: 2px;
 	color: #8fd8d3;
-	}
-	
-	.status-value {
+}
+
+.status-value {
 	margin: 2px 0 0;
 	font-family: "Orbitron", sans-serif;
 	font-size: 0.85rem;
 	letter-spacing: 1px;
-	}
-	
-	
+}
+
+
 /* =================
 	ALL CARDS 
-	=============*/
-	
+=============*/
+
 .system-status {
 	box-sizing: border-box;
 	width:100%;
@@ -127,13 +127,16 @@
 	gap: 8px;
 }
 
+.system-status p {
+	margin: 8px;
+}
 .quick-questions {
 	width:100%;
 }
 
 /*==================
 	SYNTH NOVA response
-	===============*/
+===============*/
 .response-card {
 	width:100%;
 }
@@ -143,7 +146,7 @@
 }
 /*===============
 	CARD TOP LINES
-	==============*/
+==============*/
 .card-topline {
 	display:flex;
 	justify-content: space-between;
@@ -153,15 +156,15 @@
 }
 /*================
 	RIGHT ARCHIVE panel
-	==============*/
+==============*/
 
 .archive-panel {
 	display:flex;
 	flex-direction: column;
 	gap: 20px;
 }
-	
-	.archive-links {
+
+.archive-links {
 	display:flex;
 	flex-wrap:wrap;
 	gap: 8px;
@@ -169,7 +172,7 @@
 
 /*=================
 	LEFT PANEL 
-	==============*/
+==============*/
 
 .synth-panel {
 	display:flex;
@@ -193,7 +196,7 @@
 
 /*=========================
 	CENTER PANEL 
-	================*/
+================*/
 .center-panel {
 	display: flex;
 	flex-direction: column;
@@ -222,7 +225,7 @@
 
 /*=====================
 	TRANSMISSION CARD 
-	====================*/
+====================*/
 .ask-section {
 	width:100%;
 }
@@ -237,7 +240,7 @@
 }
 /*====================
 	FEATURED history
-	=================*/
+=================*/
 
 .featured-history {
 width: 100%}
@@ -249,10 +252,10 @@ width: 100%}
 	border-radius: 8px;
 }
 
-	.main-header, .main-header * {
+.main-header, .main-header * {
 	transform: none !important;
-	}
-	
+}
+
 .main-header h1 {
 	font-size: 42px !important;
 	line-height: 1 !important; 
@@ -305,17 +308,16 @@ width: 100%}
 	display:flex;
 	flex-direction: 
 	column;
-gap: 20px;
-min-width:0;
+	gap: 20px;
+	min-width:0;
 }
 
 /*=====================
 	RESPONSIVE layout
-	==================*/
-	
-	@media (max-width: 650%) {
+==================*/
+
+@media (max-width: 650%) {
 	.ask-synth-nova {
-	grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 	}
-	}
-	
+}
