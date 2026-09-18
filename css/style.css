@@ -3,14 +3,13 @@
 	MAIN 3 COLUMN LAYOUT 
 ===================*/
 body {
-	background-color: #071616;
+	background-color: #07131f !important;
 	background-image: url("..images/synth-nova-bg.png");
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
+	background-position: center;
+	background-size: 140% auto;
 	background-attachment: fixed;
-	color: white;
-	padding: 30px;
+	min-height: 100vh;
 }
 
 .ask-nova-layout { 
@@ -25,6 +24,169 @@ body {
 	max-width: 1400px;
 	margin: 0 auto;
 	box-sizing: border-box;
+}
+
+.card.nova-identity {
+	background: 
+	linear-gradient(
+	160deg,
+	rgba(7,27,38,0.96),
+	rgba(3,16,25,0.98));
+	
+	border: 1px solid rgba(35,216,203,0.45);
+	border-radius: 12px;
+	padding: 14px;
+	
+	box-shadow:
+	inset 0 0 20px rgba(35,216,203,0.05),
+	0 0 14px rgba(35,216,203,012);
+	
+}
+
+.nova-identity .nova-image-card {
+	min-height: 260px;
+	
+	background-size: cover;
+	background-position: cebter top;
+	background-repeat: no-repeat;
+	
+	border: 1px solid rgba(35,216,203,0.45);
+	border-radius: 9px;
+	
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.nova-identity .nova-image-card: after{
+	content:"";
+	position:absolute;
+	inset: 0;
+	
+	background:
+	linear-gradient(
+	to bottom,
+	transparent 45%,
+	rgba(2,14,22,0.92) 100%
+	);
+}
+
+/*===============================
+	SYNTH NOVA DIGITAL POTRAIT
+===============================*/
+
+.nova-image-card {
+	position: relative;
+	padding: 12px;
+	
+	background:#071b2b;
+	
+	border: 2px solid #23d8cb;
+	border-radius: 14px;
+	
+	box-shadow:
+	0 0 8px rgba(97,255,241,0.65),
+	0 0 18px rgba(35,216,203,0.12),
+	inset 0 0 14px rgba(35,216,203,0.12);
+	
+	overflow: hidden;
+	
+}
+
+.nova-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	
+	border: 2px solid #61fff1;
+	border-radius: 8px;
+	
+	box-shadow:
+	0 0 8px rgba(97,255,241,0.65),
+	inset 0 0 8px rgba(97,255,241,0.2);
+}
+
+.nova-image-card::before {
+	content: "";
+	position: absolute;
+	
+	top:6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	
+	border: 1px solid rgba(987,255,241,0.45);
+	border-radius: 10px;
+	
+	pointer-events: none;
+}
+
+.nova-image{
+	clip-path: polygon(
+	10px, 0,
+	calc(100%-10px) 0,
+	100% 10px,
+	100% calc(100%-10px),
+	calc(100%-10px) 100%,
+	10px 100%,
+	0 calc(100%-10px),
+	0 10px
+	);
+}
+
+
+.nova-image-card h2{
+	margin: 12px 0 4px;
+	
+	font-family: "Orbitron", san-serif;
+	font-size: 22px;
+	letter-spacing: 3px;
+	
+	color: #d9ffff;
+	
+	text-shadow:
+	0 0 5px #23d8cb,
+	0 0 10px rgba(35,216,203,0.45);
+	
+	border-bottom: 1px solid #23d8cd;
+	padding-bottom: 8px;
+}
+
+.nova-identy .nova-image-card h2 {
+	position: absolute;
+	left: 14px;
+	bottom:12px;
+	z-index: 1;
+	
+	margin:0;
+	
+	color: #e8fff;
+	font-family: "Orbitron", san-serif;
+	font-size: 19px;
+	letter-spacing; 1.5px;
+}
+
+
+
+.nova-identity .sytem-status {
+	margin-top: 14px;
+	padding: 14px;
+	
+	background: rgba(7,27,38.0.78);
+	
+	border-left: 3px solid #23d8cb;
+	border-radius: 6px;
+	
+	color: #dffefe;
+}
+
+.nova-identity .system.status h3 {
+	margin-top: 0;
+	
+	color: #e8ffff;
+	font-family: "Orbitron", san-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
 }
 /*=============
 	TOP HERO / COMMAND HEADER 
@@ -138,8 +300,54 @@ body {
 }
 
 .system-status p {
-	margin: 8px;
+	display:flex;
+	align-items: center;
+	gap: 10px;
+	
+	padding: 8px 10px;
+	margin: 8px 0;
+	
+	background: rgba(5,18,30,0.35);
+	border: 1px solid rgba(35,216,203,0.25);
+	border-radius: 6px;
 }
+
+.system-status h3{
+	margin: 0 0 12px;
+	padding: 8px 10px;
+	
+	font-family: "Orbitron", san-serif;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	
+	color: #d9ffff;
+	
+	background: rgba(5,28,30,0.55);
+	
+	border-left:3px solid #61fff1;
+	border-bottom: 1px solid rgba(35,216,203,0.35);
+	
+	text-shadow:
+	0 0 5px rgba(97,255,241,0.65);
+	
+}
+.status-light {
+	width: 10px;
+	height: 10px;
+	
+	flex-shrink: 0;
+	
+	background-color: #61fff1;
+	border-radius: 6px;
+	
+	box-shadow:
+	0 0 5px #61fff1,
+	0 0 10px #23d8cb,
+	0 0 16px rgba(35,216,203,0.65);
+	
+}
+
 .quick-questions {
 	width:100%;
 }
@@ -303,8 +511,47 @@ body {
 	margin-bottom: 12px;
 	box-sizing: border-box;
 	resize:vertical;
+	background: #071a26;
+}
+.archive-panel: {
+	min-width: 0;
+	width: 100%;
+	box-sizing: border-box;
 }
 
+.archive.card {
+	width: 100%;
+	min-width: 0;
+	box-sizing: bordr-box;
+	overflow: hidden;
+}
+
+.archive-card .card-topline {
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+}
+
+.archive-card p{
+	width: 100%;
+	max-width: 100%;
+	overflow-wrap: break-word;
+	box-sizing: border-box;
+	
+}
+
+.archive-links {
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+
+.archive-links button{
+	width:100%;
+	box-sizing: border-box;
+	
+}
 .main-header, .main-header * {
 	transform: none !important;
 }
@@ -364,16 +611,138 @@ body {
 	gap: 20px;
 	min-width:0;
 }
-.featured-history {
+
+/*=============================
+	RIGHT PANEL- NOVA ARCHIVE
+	==========================*/
 	
+	.archive-panel {
+	min-width:0;
+	width: 100%;
+	box-sizing: border-box;
+	}
+	/* Main archive card*/
 	
-	.history-image img {
+	.archive-card {
+
+	width:100%;
+	min-width: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+	background:
+	linear-gradient(
+	180deg,
+	rgba(10,28,48,0.96),
+	rgba(14,42,65,0.92)
+	);
+	border: 1px solid #23d8cb;
+	border-radius: 14px;
+	
+	padding: 18px;
+	
+	box-shadow:
+	0 0 8px rgba(35,216,203,0.45),
+	inset 0 0 18px rgba(35,216,203,0.08);
+	}
+	
+	/* NOVA ARCHIVE/ACTIVE*/
+	.archive-card .card-topline {
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5px;
+	
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+	
+	border-bottom: 1px solid rgba(35,216,203,0.4);
+	}
+	
+	/*archives heading*/
+	
+	.archive-card h2{ 
+	margin: 8px 0;
+	
+	font-family: "Orbitron", san-serif;
+	font-size: 20px;
+	
+	color: #61fff1;
+	text-shadow: 0 0 8px rgba(97,255,241,0.45);
+	}
+	
+	/*description*/
+	.archive-card p {
+	width:100%;
+	max-width:100%;
+	box-sizing: border-box;
+	
+	margin: 0 018px;
+	
+	line-height: 1.5px;
+	overflow-wrap: break-word;
+	
+	color:rgba(220,245,245,0.8);
+	}
+	
+	/*button container*/
+	
+	.archive-links {
+      display:flex;
+	  flex-direction: column;
+	  gap: 10px;
+	  
+	  width:100%;
+	  box-sizing: border-box;
+	  
+	  padding: 10px;
+	  
+	  background: rgba(5,18,32,0.45);
+	  
+	  border: 1px solid rgba(35,216,203,0.35);
+	  border-radius: 10px;
+	
+	}
+	
+	/*ARCHIVE buttons*/
+	
+	.archive-links button{
+	width: 100%;
+	box-sizing: border-box;
+	
+	padding: 10px 6px;
+	
+	background: rgba(13,52,59,0.75);
+	
+	border: 1 px solid #23d8cb;
+	border-radius: 6px;
+	
+	color:white;
+	font-family: "Rajdhani", san-serif;
+	font-weight: 600;
+	
+	cursor: pointer;
+	
+	transition:
+	background 0.2s ease,
+	box-shadow 0.2s ease,
+	trasform 0.2s ease;
+	}
+	
+	/*digital hover effect*/
+	
+	.archive-links button::hover{
+	background:rgba(35,216,203,0.6),
+	inset 0 0 8px rgba(35,216,203,0.15);
+	transform: translateX(-2px);
+	}
+.featured-history .history-image img {
 		width: 100%;
 		height: auto;
 		display: block;
 		border-radius: 8px;
 		background-color: #3EA87F;
-	} }
+	 }
 	/*===============
 		UNITY NEXUS EMBLEM
 	================*/ 
@@ -400,10 +769,7 @@ body {
 		color:white;
 		font-family: "Rajdhani", sans-serif;
 	}
-	.main-footer p {
-		margin: 0;
-		letter-spacing: 1px;
-	}
+	
 	
 	
 	
@@ -486,25 +852,25 @@ body {
 	}
 	
 	.command-console .quick-questions .card-topline {
-	background: rgba(3,16,25,0.72);
-	border-left: 3px solid #23d8cb;
-	border-bottom: 1px solid rgba(35,216,203,0.25);
-	
-	padding: 10px 14px;
-	margin-bottom: 16px;
-	
-	color:#dffefe;
-	font-family: "Orbitron", sans-serif;
-	font-size: 11px;
-	letter-spacing: 1.5px;
+		background: rgba(3,16,25,0.72);
+		border-left: 3px solid #23d8cb;
+		border-bottom: 1px solid rgba(35,216,203,0.25);
+		
+		padding: 10px 14px;
+		margin-bottom: 16px;
+		
+		color:#dffefe;
+		font-family: "Orbitron", sans-serif;
+		font-size: 11px;
+		letter-spacing: 1.5px;
 	}
 	
 	.command-console .quick-questions h2 {
-	color: #dffefe;
-	font-family: "Orbitron", sans-serif;
-	font-size: 22px;
-	letter-spacing: 1px;
-	margin-bottom: 16px;
+		color: #dffefe;
+		font-family: "Orbitron", sans-serif;
+		font-size: 22px;
+		letter-spacing: 1px;
+		margin-bottom: 16px;
 	}
 	/* Transmission Input panel */
 	.command-console .ask-section {
@@ -538,96 +904,116 @@ body {
 	/* what happens when user clicks inside text area*/
 	
 	.command-console .ask-section textarea:focus {
-	outline:none;
-	border-color: #23d8cb;
-	
-	box-shadow:
-	0 0 10px rgba(35,216,203,0.35),
-	inset 0 0 10px rgba(35,216,203,0.08);
+		outline:none;
+		border-color: #23d8cb;
+		
+		box-shadow:
+		0 0 10px rgba(35,216,203,0.35),
+		inset 0 0 10px rgba(35,216,203,0.08);
 	}
-
-/*Styles the placeholder words inside the text area*/
+	
+	/*Styles the placeholder words inside the text area*/
 	.command-console .ask-question textarea::placeholder{
 	color: rgba(200,235,235,0.55)}
 	
 	.command-console #submitQuestion {
-	margin-top: 14px;
-	padding: 12px 24px;
-	
-	background: rgba(0,190,220,0.18);
-	color: #e8ffff;
-	
-	border: 1px solid #23d8cb;
-	border-radius: 6px;
-	
-	font-family: "Orbitron", sans-serif;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	
-	cursor: pointer;
-	
-	box-shadow:
-	0 0 8px rgba(35,216,203,025),
-	inset 0 0 8px rgba(35,216,203,0.08);
-	
-	transition: 0.25s ease;
+		margin-top: 14px;
+		padding: 12px 24px;
+		
+		background: rgba(0,190,220,0.18);
+		color: #e8ffff;
+		
+		border: 1px solid #23d8cb;
+		border-radius: 6px;
+		
+		font-family: "Orbitron", sans-serif;
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		
+		cursor: pointer;
+		
+		box-shadow:
+		0 0 8px rgba(35,216,203,025),
+		inset 0 0 8px rgba(35,216,203,0.08);
+		
+		transition: 0.25s ease;
 	}
 	
 	.command-console #submitQuestion:hover {
-	background: rgba(35,216,203,0.28);
-	
-	box-shadow: 
-	0 0 16px rgba(35,216,203,0.45),
-	inset 0 0 10px rgba(35,216,203,0.12);
-	
-	transform: translateY(-2px);
+		background: rgba(35,216,203,0.28);
+		
+		box-shadow: 
+		0 0 16px rgba(35,216,203,0.45),
+		inset 0 0 10px rgba(35,216,203,0.12);
+		
+		transform: translateY(-2px);
 	}
 	
 	.command-console #submitQuestion:active {
-	
-	transform: translateY(0)
+		
+		transform: translateY(0)
 	} 
 	/*======================
-	SYNTH NOVA RESPONSE PANEL
+		SYNTH NOVA RESPONSE PANEL
 	=====================*/
 	.command-console .response-card {
-	background: rgba(7,27,38,0.88);
-	border: 1 px solid rgba(35,216,203,0.35);
-	border-radius: 10px;
-	padding: 18px;
-	margin-bottom: 20px;
-	
-	box-shadow:
-	inset 0 0 18px rgba(35,216,203,0.05);
+		background: rgba(7,27,38,0.88);
+		border: 1 px solid rgba(35,216,203,0.35);
+		border-radius: 10px;
+		padding: 18px;
+		margin-bottom: 20px;
+		
+		box-shadow:
+		inset 0 0 18px rgba(35,216,203,0.05);
 	}
 	
 	.command-console .response-box {
-	min-height: 110px;
-	padding:18 px;
-	
-	background: rgba(2,14,22,0.88);
-	color: #dffefe;
-	
-	border-left: 3 px solid #23d8cb;
-	border-radius: 6px;
-	
-	font-family: "Rajdhani", sans-serif;
-	font-size: 17 px;
-	line-height: 1.6;
-	
-	box-shadow:
-	inset 0 0 14px rgba(35,216,203,0.08);
+		min-height: 110px;
+		padding:18 px;
+		
+		background: rgba(2,14,22,0.88);
+		color: #dffefe;
+		
+		border-left: 3 px solid #23d8cb;
+		border-radius: 6px;
+		
+		font-family: "Share Tech Mono", sans-serif;
+		font-size: 17 px;
+		line-height: 1.6;
+		
+		box-shadow:
+		inset 0 0 14px rgba(35,216,203,0.08);
 	}
 	
 	.command-console .response-box p {
-	margin: 0;
-	color: rgba(210,245,245,0.7);
+		margin: 0;
+		color: rgba(210,245,245,0.7);
 	}
 	
-.main-footer {
-		background-color: red !important;
-		min-height: 100px !important;
+	
+	
+	
+	.main-footer {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	
+	margin-top:25px;
+	padding: 20px 35px;
+	
+		background: linear-gradient(
+		135deg,
+		#081b24,
+		#0d343b,
+		#10262d
+	);
+	
+	border-top: 2px solid #23d8cb;
+	
+	color:white;
+	font-family: "Rajdhani", san-serif;
 	}
 	/*=====================
 		RESPONSIVE layout
